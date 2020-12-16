@@ -17,6 +17,13 @@
     align-items: center;
 }
 
+.logo {
+  margin: 0.5rem;
+  min-width: 150px;
+  width: calc(150px + 2vw);
+  height: auto;
+}
+
 #contact {
     background-color: #22AED1;
     border-color: transparent;

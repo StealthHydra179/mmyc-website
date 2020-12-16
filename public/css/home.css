@@ -5,22 +5,24 @@ h1 {
 }
 
 .image-stack {
-    width: calc(200px + 30vw);
-    height: auto;
+    width: 100%;
+    height: 300px;
+}
+
+.main-title {
+  white-space: nowrap;
 }
 
 .img1 {
     position: absolute;
-    margin-top: -6vw;
+    margin-left: -20px;
+    margin-top: -20px;
     z-index: 1;
-    right: 6vw;
     width: 100%
 }
 
 .img2 {
     position: absolute;
-    margin-top: -4vw;
-    right: 0px;
     width: 100%
 }
 
@@ -29,7 +31,7 @@ h1 {
 }
 
 .image-stack div img {
-    width: calc(200px + 5vw);
+    width: 100%;
     height: auto;
 }
 
@@ -37,4 +39,10 @@ h1 {
     height: 5vh;
     width: 100%;
     background-color: #555;
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+    }
 }
