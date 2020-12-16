@@ -1,0 +1,48 @@
+.footer-full {
+    background-color: lightgrey;
+    font-family: 'Monteserrat', sans-serif;
+    padding: 10px 5px;
+}
+
+.goog-te-combo {
+    background-color: rgb(229, 229, 229);
+}
+
+#footer_logo {
+    width: 20%;
+    height: 20%;
+}
+
+#twitter_button {
+    color: rgb(90, 90, 90);
+    width: 40%;
+    height: 40%;
+    padding: 3px;
+}
+
+#instagram_button {
+    color: rgb(90, 90, 90);
+    width: 40%;
+    height: 40%;
+    padding: 3px;
+}
+
+#facebook_button {
+    color: rgb(90, 90, 90);
+    width: 40%;
+    height: 40%;
+    padding: 3px;
+}
+
+#resources_list a {
+    text-align: center;
+    color: rgb(90, 90, 90);
+}
+
+html {
+    font-family: 'Monteserrat', sans-serif;
+}
+
+#icons {
+    float: right;
+}

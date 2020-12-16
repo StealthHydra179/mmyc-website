@@ -1,0 +1,43 @@
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: calc(15px + 4vw);
+}
+
+.image-stack {
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    width: calc(200px + 30vw);
+    height: auto;
+}
+
+.img1 {
+    position: absolute;
+    margin-top: -6vw;
+    z-index: 1;
+    right: 6vw;
+    width: 100%
+}
+
+.img2 {
+    position: absolute;
+    margin-top: -4vw;
+    right: 0px;
+    width: 100%
+}
+
+.text_picture_row {
+    display: flex;
+}
+
+.image-stack div img {
+    width: calc(200px + 5vw);
+    height: auto;
+}
+
+.rectangle {
+    height: 5vh;
+    width: 100%;
+    background-color: #555;
+}

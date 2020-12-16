@@ -1,0 +1,28 @@
+.navbar-light {
+    padding:10px 30px 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.margin-all {
+    padding: 0px;
+}
+
+.margin-link {
+    padding: 0px 13px;
+    border-radius: 23px;
+}
+
+.ul-align {
+    align-items: center;
+}
+
+#contact {
+    background-color: #22AED1;
+    border-color: transparent;
+    font-size: 18px;
+}
+
+#contact-text {
+    color: white;
+}
