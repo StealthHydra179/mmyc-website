@@ -49,4 +49,9 @@ h1 {
     h1 {
         font-size: 5rem;
     }
+
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        width: calc(1140px + 10vw);
+        max-width: none;
+    }
 }
