@@ -10,7 +10,7 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
 
     <body>
@@ -28,8 +28,8 @@
                 </div>
             </div>
             <hr class="w-50" style="margin-top: 150px">
-            <div class="container" style="margin-top: 100px">
-                <div class="my-5">
+            <div class="container" style="margin-top: 70px">
+                <div class="my-5 px-lg-5">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda dolores reprehenderit voluptates iusto a, vitae adipisci perferendis repudiandae! Nihil natus fugit praesentium itaque. Commodi quam eveniet, incidunt repellendus
                         eaque cupiditate. Esse dolorem magni nostrum facere, doloremque, placeat recusandae amet aspernatur aliquid temporibus perspiciatis. Rem soluta expedita pariatur quas quibusdam officia repellendus repellat magni iusto laboriosam,
                         impedit excepturi voluptatem exercitationem explicabo. Accusamus quos fuga est doloremque consectetur nesciunt nemo. Optio hic, corporis laboriosam adipisci excepturi sunt asperiores aliquid, facilis minus praesentium magnam
@@ -58,6 +58,21 @@
                 document.querySelector(".title-2").style.setProperty('--animate-duration', '1.25s');
                 document.querySelector(".title-3").style.setProperty('--animate-duration', '1s');
                 document.querySelector(".title-4").style.setProperty('--animate-duration', '0.75s');
+
+                var imgs = [
+                  "/img/cropped-IMG_4401-1-min.jpg",
+                  "/img/IMG_6500-1020x680.jpg",
+                  "/img/Screen Shot 2020-12-16 at 5.11.02 PM.png",
+                  "/img/cropped-IMG_0126-e1542073963982-1.jpg"
+                ];
+
+                var imgCounter = -1;
+                var imgDiv = document.querySelector('.img1');
+
+                var interval = setInterval(function() {
+                    ++imgCounter;
+                    imgDiv.src = imgs[imgCounter % imgs.length];
+                }, 3000);
 
             </script>
             <%- include('partials/footer') %>
