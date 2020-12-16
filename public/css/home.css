@@ -26,22 +26,6 @@ h1 {
     width: 100%
 }
 
-.title-1 {
-  --animate-delay: 0.5s;
-}
-
-.title-2 {
-  --animate-delay: 1s;
-}
-
-.title-3 {
-  --animate-delay: 1.5s;
-}
-
-.title-4 {
-  --animate-delay: 2s;
-}
-
 .text_picture_row {
     display: flex;
 }
