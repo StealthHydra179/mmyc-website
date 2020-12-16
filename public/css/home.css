@@ -5,9 +5,6 @@ h1 {
 }
 
 .image-stack {
-    position: absolute;
-    right: 0px;
-    top: 200px;
     width: calc(200px + 30vw);
     height: auto;
 }
