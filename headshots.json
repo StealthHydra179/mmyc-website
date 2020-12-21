@@ -1,0 +1,152 @@
+{
+    "data": [{
+            "firstName": "Seethaa",
+            "lastName": "Manoharan",
+            "picture": "/img/headshots/seethaa.jpg"
+        },
+
+        {
+            "firstName": "Selina",
+            "lastName": "Qiu",
+            "picture": "/img/headshots/selina.jpg"
+        },
+
+        {
+            "firstName": "Ashwin",
+            "lastName": "Suganthan",
+            "picture": "/img/headshots/ashwin.jpg"
+        },
+
+        {
+            "firstName": "Bryant",
+            "lastName": "Zheng",
+            "picture": "/img/headshots/bryant.jpg"
+        },
+
+        {
+            "firstName": "Chloe",
+            "lastName": "Vanderlugt",
+            "picture": "/img/headshots/chloe.jpg"
+        },
+
+        {
+            "firstName": "Elyssa",
+            "lastName": "Qi",
+            "picture": "/img/headshots/elyssa.png"
+        },
+
+        {
+            "firstName": "Eric",
+            "lastName": "Gao",
+            "picture": "/img/headshots/eric.jpg"
+        },
+
+        {
+            "firstName": "Ernest",
+            "lastName": "Wong",
+            "picture": "/img/headshots/ernest.jpg"
+        },
+
+        {
+            "firstName": "Gloria",
+            "lastName": "Huang",
+            "picture": "/img/headshots/gloria.jpg"
+        },
+
+        {
+            "firstName": "Ivan",
+            "lastName": "Yu",
+            "picture": "/img/headshots/ivan.jpg"
+        },
+
+        {
+            "firstName": "Jiabei",
+            "lastName": "He",
+            "picture": "/img/headshots/jiabei.jpg"
+        },
+
+        {
+            "firstName": "Jin",
+            "lastName": "Zhou",
+            "picture": "/img/headshots/jin.png"
+        },
+
+        {
+            "firstName": "Jonathan",
+            "lastName": "Feng",
+            "picture": "/img/headshots/jonathan.png"
+        },
+
+        {
+            "firstName": "Jorden",
+            "lastName": "Robinson",
+            "picture": "/img/headshots/jorden.jpg"
+        },
+
+        {
+            "firstName": "Justine",
+            "lastName": "Lin",
+            "picture": "/img/headshots/justine.jpg"
+        },
+
+        {
+            "firstName": "Kara",
+            "lastName": "Yang",
+            "picture": "/img/headshots/kara.jpg"
+        },
+
+        {
+            "firstName": "Karina",
+            "lastName": "Florea",
+            "picture": "/img/headshots/karina.jpg"
+        },
+
+        {
+            "firstName": "Manny",
+            "lastName": "Pahwa",
+            "picture": "/img/headshots/manny.jpg"
+        },
+
+        {
+            "firstName": "Marissa",
+            "lastName": "Wang",
+            "picture": "/img/headshots/marissa.jpg"
+        },
+
+        {
+            "firstName": "Maxine",
+            "lastName": "Bisera",
+            "picture": "/img/headshots/maxine.jpg"
+        },
+
+        {
+            "firstName": "Olivia",
+            "lastName": "Chan",
+            "picture": "/img/headshots/olivia.jpg"
+        },
+
+        {
+            "firstName": "Patrick",
+            "lastName": "Ang",
+            "picture": "/img/headshots/patrick.jpg"
+        },
+
+        {
+            "firstName": "Sara",
+            "lastName": "Mohammed",
+            "picture": "/img/headshots/sara.png"
+        },
+
+        {
+            "firstName": "Stephanie",
+            "lastName": "Sheng",
+            "picture": "/img/headshots/stephanie.png"
+        },
+
+        {
+            "firstName": "Ulain",
+            "lastName": "Umar",
+            "picture": "/img/headshots/ulain.jpg"
+        }
+    ]
+}

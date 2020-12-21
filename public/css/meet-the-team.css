@@ -1,0 +1,56 @@
+.body-full {
+    min-height: 73.2vh;
+    padding-bottom: 4%;
+}
+
+.title-header {
+    justify-content: center;
+}
+
+.main-title {
+    margin-bottom: 3%;
+}
+
+.main-title h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: calc(15px + 4vw);
+    text-align: center;
+}
+
+.main-title h1 span {
+    color: #054A91;
+}
+
+.col img,
+.col-3 img {
+    width: 100%;
+    transition: transform .2s;
+    margin: 0;
+    padding: 0;
+}
+
+.col button,
+.col-3 button {
+    margin-top: 3%;
+    width: 100%;
+    transition: transform .2s;
+}
+
+.col img:hover,
+.col-3 img:hover {
+    transform: scale(1.03);
+}
+
+h2 {
+    text-align: center;
+    font-size: calc(10px + 1vw);
+}
+
+.rows {
+    padding-top: 3%;
+}
+
+.cochairs {
+    padding-top: 3%;
+}

@@ -4,37 +4,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
-      <img src="/img/MMYC-Logo-1.png" class="d-inline-block align-top logo" alt="" loading="lazy">
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/home">
+        <img src="/img/MMYC-Logo-1.png" class="d-inline-block align-top logo" alt="" loading="lazy">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto margin-all">
-        <li class="nav-item margin-link">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item margin-link">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item margin-link">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown margin-link">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item margin-link btn btn-primary" id="contact">
-            <a class="nav-link" href="#" id="contact-text">Contact Us</a>
-          </li>
-      </ul>
+        <ul class="navbar-nav ml-auto margin-all">
+            <li class="nav-item margin-link">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item dropdown margin-link">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/about-us">About Us - MMYC</a>
+                    <a class="dropdown-item" href="/meet-the-team">Meet The Team</a>
+                    <a class="dropdown-item" href="/MMJC">Markahm Mayor's Junior Council</a>
+                    <a class="dropdown-item" href="/ambassador">Ambassador Program</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown margin-link">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">
+                    Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Destress.io</a>
+                    <a class="dropdown-item" href="#">Evolve 2020</a>
+                    <a class="dropdown-item" href="#">Past Events</a>
+                </div>
+            </li>
+            <li class="nav-item margin-link">
+                <a class="nav-link" href="/home">Markham Expo</a>
+            </li>
+            <li class="nav-item margin-link">
+                <a class="nav-link" href="/home">Sponsor Us!</a>
+            </li>
+            <li class="nav-item margin-link btn btn-primary" id="contact">
+                <a class="nav-link" href="#" id="contact-text">Contact Us</a>
+            </li>
+        </ul>
     </div>
-  </nav>
+</nav>
+<script type="text/javascript">
+    $('li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(20).fadeIn(150);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(20).fadeOut(100);
+    });
+</script>

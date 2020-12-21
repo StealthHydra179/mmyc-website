@@ -1,11 +1,13 @@
 .footer-full {
-    background-color: lightgrey;
-    font-family: 'Monteserrat', sans-serif;
-    padding: 10px 5px;
+    background-color: #1E3888;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 22px 5px;
+    width: 100%;
+    color: white;
 }
 
 .goog-te-combo {
-    background-color: rgb(229, 229, 229);
+    background-color: white;
 }
 
 #footer_logo {
@@ -13,30 +15,24 @@
     height: 20%;
 }
 
-#twitter_button {
-    color: rgb(90, 90, 90);
-    width: 40%;
-    height: 40%;
-    padding: 3px;
-}
-
-#instagram_button {
-    color: rgb(90, 90, 90);
-    width: 40%;
-    height: 40%;
-    padding: 3px;
-}
-
+#twitter_button,
+#instagram_button,
 #facebook_button {
-    color: rgb(90, 90, 90);
+    color: white;
     width: 40%;
     height: 40%;
     padding: 3px;
+}
+
+#twitter_button:hover,
+#instagram_button:hover,
+#facebook_button:hover {
+    color: rgb(228, 228, 228);
 }
 
 #resources_list a {
     text-align: center;
-    color: rgb(90, 90, 90);
+    color: white;
 }
 
 html {
