@@ -1,6 +1,6 @@
 <div class="footer-full">
     <div class="container">
-        <div class="row">
+        <div class="row" id="full-row">
             <div class="col-9 d-flex">
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
@@ -14,31 +14,59 @@
                     <div class="col-1"></div>
                     <div class="col-3" id="resources_list">
                         <h5>Resources</h5>
-                        <div><a href="#">FAQs</a></div>
-                        <div><a href="#">Privacy Policy</a></div>
-                        <div><a href="#">Contact Support</a></div>
+                        <div><a href="/faq">FAQs</a></div>
+                        <div><a href="/privacy">Privacy Policy</a></div>
+                        <div><a href="/contact-us">Contact Support</a></div>
                     </div>
                     <div class="col-2"></div>
-                    <div class="col-6" id="mailing_list">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1"><h5>Sign up for our Mailing List</h5></label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <button type="submit" class="btn btn-light">Submit</button>
-                        </form>
+                    <div class="col-6">
+                        <div id="mailing-list">
+                            <form name="submit-to-google-sheet-1">
+                                <div class="form-group">
+                                    <label for="mail-list">
+                                        <h5>Sign up for our Mailing List</h5>
+                                    </label>
+                                    <input type="email" class="form-control" name="mail-list" id="mail-list"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <button type="submit" class="btn btn-light">Submit</button>
+                            </form>
+                        </div>
+                        <p id="thank-you">Thanks for signing up!</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md">
                 <div class="d-flex" id="icons">
-                    <a href="https://www.facebook.com/markhamyouth" target="_blank"> <i class="fa fa-facebook-square fa-3x" id="facebook_button"></i></a>
-                    <a href="https://www.instagram.com/mayorsyc/" target="_blank"> <i class="fab fa-instagram-square fa-3x" id="instagram_button"></i></a>
-                    <a href="https://twitter.com/MayorsYC" target="_blank"> <i class="fa fa-twitter-square fa-3x" id="twitter_button"></i></a>
+                    <a href="https://www.facebook.com/markhamyouth" target="_blank"> <i
+                            class="fa fa-facebook-square fa-3x" id="facebook_button"></i></a>
+                    <a href="https://www.instagram.com/mayorsyc/" target="_blank"> <i
+                            class="fab fa-instagram-square fa-3x" id="instagram_button"></i></a>
+                    <a href="https://twitter.com/MayorsYC" target="_blank"> <i class="fa fa-twitter-square fa-3x"
+                            id="twitter_button"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+    const scriptURL1 = 'https://script.google.com/a/google.com/macros/s/AKfycbyH7fDE9yTNZmN8VT706qb-m__Uotg0hTlb6zJeGhJDKnYbdZfXfd2O/exec'
+    const form1 = document.forms['submit-to-google-sheet-1']
+    var filledOut = document.getElementsByName('submit-to-google-sheet-1')[0];
+
+    form1.addEventListener('submit', e => {
+        e.preventDefault();
+        $('#mailing-list').hide();
+        $('#thank-you').show();
+        fetch(scriptURL1, {
+            method: 'POST',
+            body: new FormData(form1)
+        })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        filledOut.reset();
+    })
+</script>

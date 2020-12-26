@@ -9,46 +9,57 @@
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <%- include('partials/navbar') %>
-            <div class="d-flex flex-row flex-wrap title-header">
-                <div class="col-md-3 animate__animated animate__zoomIn animate__delay-1s">
-                    <img src="/img/IMG_9071.jpg" class="img-left" alt="About Us">
-                </div>
-                <div class="main-title col-md-6">
-                    <h1 class="title-1 animate__animated animate__fadeInLeft">About Us</h1>
-                    <div class="d-flex flex-row flex-wrap title-header">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem obcaecati magni. Odio soluta, inventore sit ipsa illum ipsam doloremque voluptas, maxime voluptatum id vel, provident accusamus ipsum dolore cupiditate. Facere
-                            id enim aspernatur in sequi autem atque praesentium optio asperiores. Delectus debitis quibusdam nobis asperiores a id consectetur esse fugiat consequuntur molestiae dolorem cupiditate, accusamus iusto pariatur eligendi eius?
-                            Omnis libero nisi quisquam ex voluptate vitae hic expedita perferendis voluptatum non eaque iste pariatur eos velit autem inventore cumque cum voluptatem, corporis, quos aperiam. Ex recusandae laboriosam iusto nihil! Natus
-                            aut blanditiis reiciendis delectus.</p>
+    <body id="page-container">
+        <div id="content-wrap">
+            <%- include('partials/navbar') %>
+                <div class="d-flex flex-row flex-wrap title-header">
+                    <div class="col-md-3 animate__animated animate__zoomIn animate__delay-1s">
+                        <img src="/img/IMG_9071.jpg" class="img-left" alt="About Us">
                     </div>
-                    <hr class="w-50">
-                    <div class="d-flex flex-row flex-wrap">
-                        <div class="card">
-                            <div class="card-body quote-block">
-                                <blockquote class="blockquote mb-0">
-                                    <div class="d-flex flex-row">
-                                        <div class="col-9">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                            <footer class="blockquote-footer"><i>Frank Scarpitti</i>, Mayor of Markham</footer>
+                    <div class="main-title col-md-6">
+                        <h1 class="title-1 animate__animated animate__fadeInLeft">About Us</h1>
+                        <div class="d-flex flex-row flex-wrap title-header">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem obcaecati magni.
+                                Odio soluta, inventore sit ipsa illum ipsam doloremque voluptas, maxime voluptatum id
+                                vel, provident accusamus ipsum dolore cupiditate. Facere
+                                id enim aspernatur in sequi autem atque praesentium optio asperiores. Delectus debitis
+                                quibusdam nobis asperiores a id consectetur esse fugiat consequuntur molestiae dolorem
+                                cupiditate, accusamus iusto pariatur eligendi eius?
+                                Omnis libero nisi quisquam ex voluptate vitae hic expedita perferendis voluptatum non
+                                eaque iste pariatur eos velit autem inventore cumque cum voluptatem, corporis, quos
+                                aperiam. Ex recusandae laboriosam iusto nihil! Natus
+                                aut blanditiis reiciendis delectus.</p>
+                        </div>
+                        <hr class="w-50">
+                        <div class="d-flex flex-row flex-wrap">
+                            <div class="card">
+                                <div class="card-body quote-block">
+                                    <blockquote class="blockquote mb-0">
+                                        <div class="d-flex flex-row">
+                                            <div class="col-9">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                                    posuere erat a ante.</p>
+                                                <footer class="blockquote-footer"><i>Frank Scarpitti</i>, Mayor of
+                                                    Markham</footer>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/img/2013-Frank-Scarpitti-with-Chain-of-Office-1.jpg"
+                                                    class="mayor-picture" alt="Mayor Scarpitti's Picture">
+                                            </div>
                                         </div>
-                                        <div class="col-3">
-                                            <img src="/img/2013-Frank-Scarpitti-with-Chain-of-Office-1.jpg" class="mayor-picture" alt="Mayor Scarpitti's Picture">
-                                        </div>
-                                    </div>
-                                </blockquote>
+                                    </blockquote>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 animate__animated animate__zoomIn animate__delay-1s">
+                    <div class="col-md-3 animate__animated animate__zoomIn animate__delay-1s">
 
-                    <img src="/img/mmjcright.jpg" class="img-right" alt="MMJC">
+                        <img src="/img/mmjcright.jpg" class="img-right" alt="MMJC">
+                    </div>
                 </div>
-            </div>
+        </div>
 
-            <%- include('partials/footer') %>
+        <%- include('partials/footer') %>
     </body>
 
 </html>

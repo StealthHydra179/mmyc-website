@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/header') %>
+
+    <head>
+        <link rel="stylesheet" href="/css/contact-us.css">
+    </head>
+
+    <body id="page-container">
+        <div id="content-wrap">
+            <%- include('partials/navbar') %>
+                <div class="body-full">
+                    <div class="d-flex flex-row flex-wrap title-header">
+                        <div class="col-md-3">
+                            <img src="" class="" alt="">
+                        </div>
+                        <div class="col-md-6 title-1">
+                            <p>QUESTIONS? COMMENTS? SUGGESTIONS?</p>
+                            <h1>Contact Us!</h1>
+                            <p>We'd love to hear from you! You can also find us on:</p>
+                        </div>
+                        <div class="col-md-3 "></div>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap icons">
+                        <div class="col-md-4">
+                            <img src="" class="" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <div class=social-media ">
+                            <a href=" https://www.facebook.com/markhamyouth " target=" _blank ">
+                                <img alt=" "src=" /img/icons/facebook.png ">
+                             </a>
+                            <a href=" https://twitter.com/MayorsYC " target=" _blank ">
+                                <img alt=" "src=" /img/icons/twitter.png ">
+                             </a>
+                            <a href=" https://www.instagram.com/mayorsyc/ " target=" _blank ">
+                                <img alt=" "src=" /img/icons/instagram.png ">
+                             </a>
+                            <a href=" https://www.linkedin.com/company/markham-mayor-s-youth-council/about/ " target="
+                                _blank ">
+                                <img alt=" "src=" /img/icons/linkedin.png ">
+                             </a>
+                            <a href=" https://www.youtube.com/channel/UC_-zTvf6AqzgJyIsXqnQSxA " target=" _blank ">
+                                <img alt=" "src=" /img/icons/youtube.png ">
+                             </a>
+                        </div>
+
+
+                        <div id="my-form">
+                                <form name="submit-to-google-sheet" class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <div class=" row ">
+                                            <div class=" col ">
+                                                <label for="firstname">&nbsp First Name</label>
+                                                <input type=" ext" class="form-control" name="firstname" id="firstname"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please enter your first name.
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <label for="lastname">&nbsp Last Name</label>
+                                                <input type="text" class="form-control" name="lastname" id="lastname"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please enter your last name.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">&nbsp Email Address</label>
+                                        <input type="email" class="form-control" name="email" id="email" required>
+                                        <div class=" invalid-feedback ">
+                                            Please enter your email address.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="company">&nbsp Company (Optional)</label>
+                                        <input type="text" class="form-control" name="company" id="company">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">&nbsp Your Message</label>
+                                        <textarea type="text" class="form-control" rows="7" name="message" id="message"style="height: auto;" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Please enter your message.
+                                        </div>
+                                    </div>
+                                    <button class="btn" type="submit" id="submit-button">Submit</button>
+                                </form>
+                            </div>
+                            <div id="thanks">
+                                <p>Thank you for contacting us! Inquiries will be answered as soon as possible.</p>
+                                <a href="/home">
+                                    Back to Home Page
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 "></div>
+                    </div>
+                </div>
+        </div>
+        <%- include('partials/footer') %>
+
+            <script>
+                (function () {
+                    'use strict';
+                    window.addEventListener('load', function () {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+
+                const scriptURL = 'https://script.google.com/a/google.com/macros/s/AKfycbyH7fDE9yTNZmN8VT706qb-m__Uotg0hTlb6zJeGhJDKnYbdZfXfd2O/exec'
+                const form = document.forms['submit-to-google-sheet']
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    $('#my-form').hide();
+                    $('#thanks').show();
+                    fetch(scriptURL, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                })
+
+            </script>
+    </body>
+
+</html>

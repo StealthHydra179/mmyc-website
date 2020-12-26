@@ -2,8 +2,11 @@
     background-color: #1E3888;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 22px 5px;
-    width: 100%;
     color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 220px;
 }
 
 .goog-te-combo {
@@ -33,12 +36,32 @@
 #resources_list a {
     text-align: center;
     color: white;
+    font-family: sans-serif;
 }
 
 html {
-    font-family: 'Monteserrat', sans-serif;
+    font-family: sans-serif;
 }
 
 #icons {
     float: right;
+}
+
+#thank-you{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    #mailing-list{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #facebook_button, #instagram_button, #twitter_button {
+        display:none;
+    }
+    #full-row {
+        align-items: center;
+    }
 }

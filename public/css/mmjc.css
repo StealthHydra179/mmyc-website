@@ -5,7 +5,7 @@ body {
 .main-title h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: calc(15px + 4vw);
+    font-size: calc(22px + 3vw);
     text-align: center;
 }
 
@@ -86,7 +86,7 @@ body {
 
 .title-header p {
     font-size: calc(14px + 0.5vw);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: justify;
 }
 
@@ -110,4 +110,13 @@ body {
 
 .card {
     width: 100%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 220px;
 }

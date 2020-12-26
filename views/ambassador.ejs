@@ -7,23 +7,29 @@
         <link rel="stylesheet" href="/css/ambassador.css">
     </head>
 
-    <body>
-        <%- include('partials/navbar') %>
-            <div class="d-flex flex-row flex-wrap title-header body-full">
-                <div class="col-md-5 animate__animated animate__zoomIn animate__delay-1s">
-                    <img src="/img/ambassadorleft.jpg" class="img-left" alt="MMYC Merch">
-                </div>
-                <div class="main-title col-md-6">
-                    <h1 class="title-1 animate__animated animate__fadeInLeft">Ambassador Program</h1>
-                    <div class="d-flex flex-row flex-wrap title-header">
-                        <p>The MMYC Ambassadors are composed of ambitious youth that help promote not only MMYC events, but MMYC’s values of community involvement and leadership as well. In previous years, the Ambassadors have taken on different initiatives
-                            to promote awareness for youth issues. Apart from developing leadership skills, joining the Ambassadors is an opportunity to better understand how MMYC operates and have your voice heard within the Markham youth community.</p>
+    <body id="page-container">
+        <div id="content-wrap">
+            <%- include('partials/navbar') %>
+                <div class="d-flex flex-row flex-wrap title-header body-full">
+                    <div class="col-md-5 animate__animated animate__zoomIn animate__delay-1s">
+                        <img src="/img/ambassadorleft.jpg" class="img-left" alt="MMYC Merch">
                     </div>
+                    <div class="main-title col-md-6">
+                        <h1 class="title-1 animate__animated animate__fadeInRight">Ambassador Program</h1>
+                        <div class="d-flex flex-row flex-wrap title-header">
+                            <p>The MMYC Ambassadors are composed of ambitious youth that help promote not only MMYC
+                                events, but MMYC’s values of community involvement and leadership as well. In previous
+                                years, the Ambassadors have taken on different initiatives
+                                to promote awareness for youth issues. Apart from developing leadership skills, joining
+                                the Ambassadors is an opportunity to better understand how MMYC operates and have your
+                                voice heard within the Markham youth community.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
-                <div class="col-md-1"></div>
-            </div>
+        </div>
+        <%- include('partials/footer') %>
 
-            <%- include('partials/footer') %>
     </body>
 
 </html>

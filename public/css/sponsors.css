@@ -1,0 +1,72 @@
+.event-banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.title-3 {
+    margin-bottom: 3%;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 700;
+    font-size: calc(8px + 1vw);
+    text-align: center;
+}
+
+.title-2 {
+    margin-bottom: 3%;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 700;
+    font-size: calc(6px + 2vw);
+    text-align: center;
+}
+
+.title-1 {
+    margin-bottom: 3%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: calc(22px + 3vw);
+    text-align: center;
+}
+
+p span {
+    color: #054A91;
+}
+
+.title-header {
+    margin-bottom: 1%;
+}
+
+.body-full {
+    min-height: 73.2vh;
+    padding-bottom: 3%;
+}
+
+p {
+    font-size: calc(14px + 0.5vw);
+    font-family: 'Mulish', sans-serif;
+    text-align: justify;
+}
+
+.time-date {
+    float: left;
+}
+
+.past-sponsors img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 8%;
+}
+
+.past-sponsors {
+    margin-bottom: 5%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 220px;
+}

@@ -13,77 +13,85 @@
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     </head>
 
-    <body>
-        <%- include('partials/navbar') %>
-            <div class="container d-flex flex-row flex-wrap my-5 pt-5 align-items-center">
-                <div class="main-title col-lg-6 col-12">
-                    <h1 class="title-1 animate__animated animate__fadeInDown">Markham</h1>
-                    <h1 class="title-2 animate__animated animate__fadeInDown">&nbsp &nbsp Mayor's</h1>
-                    <h1 class="title-3 animate__animated animate__fadeInDown">&nbsp &nbsp &nbsp &nbsp Youth</h1>
-                    <h1 class="title-4 animate__animated animate__fadeInDown">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Council
-                    </h1>
-                </div>
-                <div class="animate__animated animate__zoomIn animate__delay-1s image-stack col-lg-6 col-12 my-5 my-lg-0">
-                    <img src="/img/cropped-IMG_4401-1-min.jpg" class="img1" alt="Team Pictures">
-                    <img src="/img/yale_blue.jpg" class="img2" alt="">
-                </div>
-            </div>
-            <hr class="w-50" style="margin-top: 150px">
-            <div class="container" style="margin-top: 70px">
-                <div class="my-5 px-lg-5">
-                    <p>Markham Mayor’s Youth Council is a group of diverse and dedicated teens representing the fabric of Markham’s youth community. We are dedicated to raising awareness and celebrating youth, as well as being an active voice in the City
-                        of Markham. The MMYC is a branch of the Markham Council run by youth. It is comprised of youth, Markham Councillors and the Mayor of Markham. The purpose of the MMYC is to provide local youth a voice by which they may give input
-                        and develop initiatives to enhance youth opportunities within the City of Markham.
-                    </p>
-                </div>
-                <div class="autoplay my-5">
-                    <div class="d-flex justify-content-center">
-                        <a class="" href="/about-us">
-                            <img src="/img/aboutusslider.jpg" class="" alt="About Us">
-                        </a>
+    <body id="page-container">
+        <div id="content-wrap">
+            <%- include('partials/navbar') %>
+                <div class="container d-flex flex-row flex-wrap my-5 pt-5 align-items-center">
+                    <div class="main-title col-lg-6 col-12">
+                        <h1 class="title-1 animate__animated animate__fadeInDown"><span>M</span>arkham</h1>
+                        <h1 class="title-2 animate__animated animate__fadeInDown">&nbsp &nbsp <span>M</span>ayor's</h1>
+                        <h1 class="title-3 animate__animated animate__fadeInDown">&nbsp &nbsp &nbsp &nbsp
+                            <span>Y</span>outh
+                        </h1>
+                        <h1 class="title-4 animate__animated animate__fadeInDown">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            <span>C</span>ouncil
+                        </h1>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <a class="" href="/meet-the-team">
-                            <img src="/img/meetteambanner.jpg" class="" alt="Meet The Team">
-                        </a>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <a class="" href="/events">
-                            <img src="/img/oureventsslider.jpg" class="" alt="Our Events">
-                        </a>
+                    <div
+                        class="animate__animated animate__zoomIn animate__delay-1s image-stack col-lg-6 col-12 my-5 my-lg-0">
+                        <img src="/img/cropped-IMG_4401-1-min.jpg" class="img1" alt="Team Pictures">
                     </div>
                 </div>
-            </div>
-            <script type="text/javascript">
-                $('.autoplay').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    centreMode: true,
-                    autoplaySpeed: 3500,
-                });
+                <hr class="w-50" style="margin-top: 150px">
+                <div class="container" style="margin-top: 70px">
+                    <div class="my-5 px-lg-5">
+                        <p>Markham Mayor’s Youth Council is a group of diverse and dedicated teens representing the
+                            fabric of Markham’s youth community. We are dedicated to raising awareness and celebrating
+                            youth, as well as being an active voice in the City
+                            of Markham. The MMYC is a branch of the Markham Council run by youth. It is comprised of
+                            youth, Markham Councillors and the Mayor of Markham. The purpose of the MMYC is to provide
+                            local youth a voice by which they may give input
+                            and develop initiatives to enhance youth opportunities within the City of Markham.
+                        </p>
+                    </div>
+                    <div class="autoplay my-5">
+                        <div class="d-flex justify-content-center">
+                            <a class="" href="/about-us">
+                                <img src="/img/aboutusslider.jpg" class="" alt="About Us">
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="" href="/meet-the-team">
+                                <img src="/img/meetteambanner.jpg" class="" alt="Meet The Team">
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="" href="/events">
+                                <img src="/img/oureventsslider.jpg" class="" alt="Our Events">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script type="text/javascript">
+            $('.autoplay').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                centreMode: true,
+                autoplaySpeed: 3500,
+            });
 
-                document.querySelector(".title-1").style.setProperty('--animate-duration', '1.5s');
-                document.querySelector(".title-2").style.setProperty('--animate-duration', '1.25s');
-                document.querySelector(".title-3").style.setProperty('--animate-duration', '1s');
-                document.querySelector(".title-4").style.setProperty('--animate-duration', '0.75s');
+            document.querySelector(".title-1").style.setProperty('--animate-duration', '1.5s');
+            document.querySelector(".title-2").style.setProperty('--animate-duration', '1.25s');
+            document.querySelector(".title-3").style.setProperty('--animate-duration', '1s');
+            document.querySelector(".title-4").style.setProperty('--animate-duration', '0.75s');
 
-                var imgs = [
-                    "/img/cropped-IMG_4401-1-min.jpg",
-                    "/img/IMG_6500-1020x680.jpg",
-                    "/img/Screen Shot 2020-12-16 at 5.11.02 PM.png",
-                    "/img/cropped-IMG_0126-e1542073963982-1.jpg"
-                ];
+            var imgs = [
+                "/img/cropped-IMG_4401-1-min.jpg",
+                "/img/IMG_6500-1020x680.jpg",
+                "/img/Screen Shot 2020-12-16 at 5.11.02 PM.png",
+            ];
 
-                var imgCounter = -1;
-                var imgDiv = document.querySelector('.img1');
+            var imgCounter = -1;
+            var imgDiv = document.querySelector('.img1');
 
-                var interval = setInterval(function() {
-                    ++imgCounter;
-                    imgDiv.src = imgs[imgCounter % imgs.length];
-                }, 3000);
-            </script>
-            <%- include('partials/footer') %>
+            var interval = setInterval(function () {
+                ++imgCounter;
+                imgDiv.src = imgs[imgCounter % imgs.length];
+            }, 3000);
+        </script>
+        <%- include('partials/footer') %>
     </body>
 
 </html>
