@@ -1,57 +1,53 @@
 <div class="footer-full">
-    <div class="container">
-        <div class="row" id="full-row">
-            <div class="col-9 d-flex">
-                <div id="google_translate_element"></div>
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({
-                            pageLanguage: 'en'
-                        }, 'google_translate_element');
-                    }
-                </script>
-                <div class="row container-fluid">
-                    <div class="col-1"></div>
-                    <div class="col-3" id="resources_list">
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center" id="full-row">
+            <div class="col-xl-9 col-lg-10 col-md-12 h-100">
+                <div class="h-100 w-100 d-flex flex-lg-row align-items-center justify-content-center">
+                    <div class="col-md-3 col-6" id="resources_list">
                         <h5>Resources</h5>
                         <div><a href="/faq">FAQs</a></div>
                         <div><a href="/privacy">Privacy Policy</a></div>
                         <div><a href="/contact-us">Contact Support</a></div>
                     </div>
-                    <div class="col-2"></div>
-                    <div class="col-6">
-                        <div id="mailing-list">
-                            <form name="submit-to-google-sheet-1">
-                                <div class="form-group">
-                                    <label for="mail-list">
-                                        <h5>Sign up for our Mailing List</h5>
-                                    </label>
-                                    <input type="email" class="form-control" name="mail-list" id="mail-list"
-                                        aria-describedby="emailHelp">
-                                </div>
-                                <button type="submit" class="btn btn-light">Submit</button>
-                            </form>
-                        </div>
+                    <div class="col-md-6 d-none d-md-block">
+                      <h5 class="mb-3">Sign up for our Mailing List</h5>
+                        <form class="form-inline" name="submit-to-google-sheet-1">
+                            <div class="form-group mr-3">
+                                <input type="email" class="form-control" name="mail-list" id="mail-list"
+                                    aria-describedby="emailHelp" placeholder="jsmith@example.com"
+                                    style="font-size: 0.8rem">
+                            </div>
+                            <button type="submit" class="btn btn-info btn-sm">Submit</button>
+                        </form>
                         <p id="thank-you">Thanks for signing up!</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="d-flex" id="icons">
-                    <a href="https://www.facebook.com/markhamyouth" target="_blank"> <i
-                            class="fa fa-facebook-square fa-3x" id="facebook_button"></i></a>
-                    <a href="https://www.instagram.com/mayorsyc/" target="_blank"> <i
-                            class="fab fa-instagram-square fa-3x" id="instagram_button"></i></a>
-                    <a href="https://twitter.com/MayorsYC" target="_blank"> <i class="fa fa-twitter-square fa-3x"
-                            id="twitter_button"></i></a>
+                    <div class="col-md-3 col-6 d-flex flex-column">
+                      <script type="text/javascript">
+                          function googleTranslateElementInit() {
+                              new google.translate.TranslateElement({
+                                  pageLanguage: 'en'
+                              }, 'google_translate_element');
+                          }
+                      </script>
+                        <div class="d-flex flex-row justify-content-end">
+                          <div id="google_translate_element"></div>
+                        </div>
+                        <div class="d-md-flex flex-row justify-content-end mt-4 d-none">
+                            <a href="https://www.facebook.com/markhamyouth" target="_blank"> <i
+                                    class="fa fa-facebook-square fa-2x" id="facebook_button"></i></a>
+                            <a href="https://www.instagram.com/mayorsyc/" target="_blank"> <i
+                                    class="fab fa-instagram-square fa-2x" id="instagram_button"></i></a>
+                            <a href="https://twitter.com/MayorsYC" target="_blank"> <i class="fa fa-twitter-square fa-2x"
+                                    id="twitter_button"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
     const scriptURL1 = 'https://script.google.com/a/google.com/macros/s/AKfycbyH7fDE9yTNZmN8VT706qb-m__Uotg0hTlb6zJeGhJDKnYbdZfXfd2O/exec'
     const form1 = document.forms['submit-to-google-sheet-1']

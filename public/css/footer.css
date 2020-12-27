@@ -10,7 +10,11 @@
 }
 
 .goog-te-combo {
-    background-color: white;
+    font-family: 'Lato', sans-serif;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
 #footer_logo {
@@ -49,19 +53,4 @@ html {
 
 #thank-you{
     display: none;
-}
-
-@media screen and (max-width: 992px) {
-    #mailing-list{
-        display:none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #facebook_button, #instagram_button, #twitter_button {
-        display:none;
-    }
-    #full-row {
-        align-items: center;
-    }
 }

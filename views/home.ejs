@@ -16,8 +16,8 @@
     <body id="page-container">
         <div id="content-wrap">
             <%- include('partials/navbar') %>
-                <div class="container d-flex flex-row flex-wrap my-5 pt-5 align-items-center">
-                    <div class="main-title col-lg-6 col-12">
+                <div class="container px-lg-5 d-flex flex-row flex-wrap my-5 pt-md-5 align-items-center">
+                    <div class="main-title col-lg-6 col-12 mb-lg-0 mb-4">
                         <h1 class="title-1 animate__animated animate__fadeInDown"><span>M</span>arkham</h1>
                         <h1 class="title-2 animate__animated animate__fadeInDown">&nbsp &nbsp <span>M</span>ayor's</h1>
                         <h1 class="title-3 animate__animated animate__fadeInDown">&nbsp &nbsp &nbsp &nbsp
@@ -27,15 +27,16 @@
                             <span>C</span>ouncil
                         </h1>
                     </div>
-                    <div
-                        class="animate__animated animate__zoomIn animate__delay-1s image-stack col-lg-6 col-12 my-5 my-lg-0">
-                        <img src="/img/cropped-IMG_4401-1-min.jpg" class="img1" alt="Team Pictures">
+                    <div class="animate__animated animate__zoomIn animate__delay-1s image-stack col-lg-6 col-12">
+                        <img src="/img/cropped-IMG_4401-1-min.jpg" class="img img1 show" alt="Team Picture 1">
+                        <img src="/img/IMG_6500-1020x680.jpg" class="img img2" alt="Team Picture 2">
+                        <img src="/img/Screen Shot 2020-12-16 at 5.11.02 PM.png" class="img img3" alt="Team Picture 3">
                     </div>
                 </div>
-                <hr class="w-50" style="margin-top: 150px">
-                <div class="container" style="margin-top: 70px">
+                <hr class="w-50">
+                <div class="container">
                     <div class="my-5 px-lg-5">
-                        <p>Markham Mayor’s Youth Council is a group of diverse and dedicated teens representing the
+                        <p> Markham Mayor’s Youth Council is a group of diverse and dedicated teens representing the
                             fabric of Markham’s youth community. We are dedicated to raising awareness and celebrating
                             youth, as well as being an active voice in the City
                             of Markham. The MMYC is a branch of the Markham Council run by youth. It is comprised of
@@ -70,6 +71,13 @@
                 autoplay: true,
                 centreMode: true,
                 autoplaySpeed: 3500,
+                responsive: [
+                {
+                  breakpoint: 992,
+                  settings: {
+                    arrows: false,
+                  }
+                }]
             });
 
             document.querySelector(".title-1").style.setProperty('--animate-duration', '1.5s');
@@ -77,19 +85,26 @@
             document.querySelector(".title-3").style.setProperty('--animate-duration', '1s');
             document.querySelector(".title-4").style.setProperty('--animate-duration', '0.75s');
 
-            var imgs = [
-                "/img/cropped-IMG_4401-1-min.jpg",
-                "/img/IMG_6500-1020x680.jpg",
-                "/img/Screen Shot 2020-12-16 at 5.11.02 PM.png",
-            ];
-
             var imgCounter = -1;
-            var imgDiv = document.querySelector('.img1');
+            var imgCount = 3;
+            var showIndex;
+            var removeIndex;
 
             var interval = setInterval(function () {
                 ++imgCounter;
-                imgDiv.src = imgs[imgCounter % imgs.length];
-            }, 3000);
+                showIndex = ((imgCounter % imgCount) + 1);
+
+                if (imgCounter % imgCount === 0) {
+                  removeIndex = imgCount;
+                } else {
+                  removeIndex = (imgCounter % imgCount);
+                }
+
+                let showDiv = document.querySelector(".img" + showIndex);
+                let removeDiv = document.querySelector(".img" + removeIndex);
+                showDiv.classList.add("show");
+                removeDiv.classList.remove("show");
+            }, 4000);
         </script>
         <%- include('partials/footer') %>
     </body>
