@@ -21,11 +21,11 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="d-flex flex-row flex-wrap">
-                                        <div class="col-8">
+                                    <div class="d-flex flex-lg-row flex-col justify-content-center align-items-center flex-wrap">
+                                        <div class="order-lg-0 order-1 col-lg-8">
                                             <%= jsonContent[i].bio %>
                                         </div>
-                                        <div class="col-4 profile-circle">
+                                        <div class="order-lg-1 order-0 col-lg-4 col-10 mb-5 mb-lg-0 profile-circle">
                                             <img src="<%= jsonContent[i].picture %>">
                                         </div>
                                     </div>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                     </div>
-                    <% } %>
+                  <% } %>
 
                         <div class="container d-flex flex-wrap body-full title-header">
                             <div class="main-title my-5">
