@@ -22,23 +22,20 @@
     color: #054A91;
 }
 
-.col img,
-.col-3 img {
+.grid-column img {
     width: 100%;
     transition: transform .2s;
     margin: 0;
     padding-bottom: 5px;
 }
 
-.col button,
-.col-3 button {
+.grid-column button {
     margin-top: 3%;
     width: 100%;
     transition: transform .2s;
 }
 
-.col img:hover,
-.col-3 img:hover {
+.grid-column img:hover {
     transform: scale(1.03);
 }
 
@@ -57,7 +54,7 @@ h2 {
     padding-top: 3%;
 }
 
-.col-4 img {
+.profile-circle img {
     width: 100%;
     border-radius: 50%;
 }
@@ -66,7 +63,7 @@ h2 {
     position: relative;
     min-height: 100vh;
 }
-  
+
 #content-wrap {
     padding-bottom: 220px;
 }
