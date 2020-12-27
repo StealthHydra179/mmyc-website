@@ -13,6 +13,8 @@ app.use("/modules/popperjs", express.static(__dirname + "/node_modules/popper.js
 app.use("/modules/bootstrap", express.static(__dirname + "/node_modules/bootstrap/dist/"));
 app.use(express.static(__dirname + '/public'));
 
+app.use('/favicon.ico', express.static('./favicon.ico'));
+
 app.get('/', (req, res) => {
     res.locals.title = 'MMYC Home Page';
     res.render('home');
