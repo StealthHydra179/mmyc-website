@@ -104,6 +104,12 @@ body {
     text-align: justify;
 }
 
+li {
+    font-size: calc(8px + 0.75vw);
+    font-family: 'Mulish', sans-serif;
+    text-align: justify;
+}
+
 .autoplay div a img {
     width: 100%;
     height: auto;
