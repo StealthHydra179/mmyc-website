@@ -86,8 +86,10 @@ app.get('/faq', (req, res) => {
     res.render('faq');
 })
 
-app.listen(3000, () => {
-    console.log("Listening 3000");
+var port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log("Listening");
 })
 
 var fs = require("fs");
