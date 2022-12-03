@@ -3,6 +3,12 @@ Website project for the Markham Mayor's Youth Council
 
 Currently facing issues with domain ownership – temporary site can be found at https://mmyc-website.herokuapp.com/
 
+## How to run
+```
+npm install
+node app
+```
+
 
 ## Things to change
 - Update packages
