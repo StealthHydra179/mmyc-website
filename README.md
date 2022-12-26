@@ -16,3 +16,12 @@ Website opens on port 3000 once run. [http://localhost:3000](http://localhost:30
 by typing /events after the URL
 - update events pages and the respective event pages
 - DONE refactor events into their own folder 
+
+## Furthernotes
+in [headshots](headshots.json) the names are the names of the images in the 
+[images](public/images) folder. The images should be in the format of `name.jpg` 
+or `name.png` where name is the name of the person. The images should be square and 
+300x300 pixels. It is also located in the [images](public/img/headshots) folder in 
+this github repository.
+
+Furthermore, the first two people in the headshots.json file are the co-chairs.
