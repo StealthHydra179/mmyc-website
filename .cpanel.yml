@@ -1,7 +1,7 @@
 ---
 deployment:
     tasks:
-      - export DEPLOYPATH=/home/sybb0997/public_html
+      - export DEPLOYPATH=/home/sybb0997/public_html/
       - /bin/cp -R public $DEPLOYPATH
       - /bin/cp -R views $DEPLOYPATH
       - /bin/cp app.js $DEPLOYPATH
@@ -11,3 +11,4 @@ deployment:
       - /bin/cp -R node_modules $DEPLOYPATH
       - /bin/cp headshots.json $DEPLOYPATH
       - /bin/cp README.md $DEPLOYPATH
+#      - just make it run the npm commands
