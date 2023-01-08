@@ -45,22 +45,26 @@ app.get('/ambassador', (req, res) => {
     res.locals.title = 'Ambassador Program';
     res.render('ambassador');
 })
-
-app.get('/thinktank', (req, res) => {
-    res.locals.title = 'ThinkTank';
-    res.render('thinktank');
+// TODO WHENEVER EDITING PAGES NEED TO ADD A NEW ROUTE FOR THE PAGE
+// app.get('/events/thinktank', (req, res) => {
+//     res.locals.title = 'ThinkTank';
+//     res.render('events/thinktank');
+// })
+//
+// app.get('/events/collage', (req, res) => {
+//     res.locals.title = 'Collage';
+//     res.render('events/collage');
+// })
+//
+// app.get('/events/frostbites', (req, res) => {
+//     res.locals.title = 'Frostbites';
+//     res.render('events/frostbites');
+// })
+// END TODO
+app.get('/events/thinktank2023', (req, res) => {
+    res.locals.title = 'ThinkTank 2023';
+    res.render('events/thinktank2023');
 })
-
-app.get('/collage', (req, res) => {
-    res.locals.title = 'Collage';
-    res.render('collage');
-})
-
-app.get('/frostbites', (req, res) => {
-    res.locals.title = 'Frostbites';
-    res.render('frostbites');
-})
-
 app.get('/events', (req, res) => {
     res.locals.title = 'Our Events';
     res.render('events');
