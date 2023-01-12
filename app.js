@@ -36,10 +36,10 @@ app.get('/meet-the-team', (req, res) => {
     res.render('meet-the-team');
 })
 
-app.get('/mmjc', (req, res) => {
-    res.locals.title = 'MMJC';
-    res.render('mmjc');
-})
+// app.get('/mmjc', (req, res) => {
+//     res.locals.title = 'MMJC';
+//     res.render('mmjc');
+// })
 
 app.get('/ambassador', (req, res) => {
     res.locals.title = 'Ambassador Program';
