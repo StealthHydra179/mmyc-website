@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "processImages": "node resize_images.js"
   },
   "author": "Evan Qi",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "path": "^0.12.7",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "sharp": "^0.31.3"
   }
 }
