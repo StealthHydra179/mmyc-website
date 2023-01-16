@@ -6,6 +6,8 @@ console.log("Resizing Images");
 //images to resize
 
 resizeImage("./public/img/logo/MMYC-Logo-1.png","./public/img/logo/resized/MMYC-Logo-210px.webp", 210, 57);
+resizeImage("./public/img/logo/MMYC-Logo-1.png","./public/img/logo/resized/MMYC-Logo-420px.png", 420, 114);
+
 resizeImage("./public/img/events/thinktank2023/thinktank_left_banner.jpg","./public/img/events/thinktank2023/resized/thinktank_left_banner-256.webp", 256,493);
 resizeImage("./public/img/events/thinktank2023/thinktank_left_banner.jpg","./public/img/events/thinktank2023/resized/thinktank_left_banner-540.webp", 540,1041);
 resizeImage("./public/img/events/thinktank2023/thinktank_left_banner.jpg","./public/img/events/thinktank2023/resized/thinktank_left_banner-720.webp", 720,1388);
