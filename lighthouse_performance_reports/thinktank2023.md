@@ -3,3 +3,6 @@
 - Wifi: STR
 - Google Chrome
 
+[2023-01-17: 13:38](https://googlechrome.github.io/lighthouse/viewer/?gist=90271b100b82a415922cb4ab3cf31f54)
+- Wifi: STR
+- Google Chrome
