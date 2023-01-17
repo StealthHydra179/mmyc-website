@@ -117,3 +117,7 @@ typings/
 
 #jetbrains files
 .idea
+
+# temp img files
+views/img
+views/partials/img
