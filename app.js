@@ -94,6 +94,19 @@ app.get('/events/evolve2023/signup', (req, res) => {
     res.status(302).redirect("https://docs.google.com/forms/d/e/1FAIpQLSddX4fI8ZOmBJgN9U7kTNLmnebHOlO287ptJLYDL7UPQcBuMg/viewform")
 })
 
+// app.get('/events/evolve2023/', (req, res) => {
+//     res.locals.title = 'Evolve 2023';
+//     res.status(301).redirect("/events/evolve2023")
+// })
+
+app.get('/events/evolve2023', (req, res) => {
+    res.locals.title = 'Evolve 2023';
+    res.render('events/evolve2023');
+})
+
+
+// why does backslash at the end break everything ;-;
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, () => {
