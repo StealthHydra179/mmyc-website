@@ -7,6 +7,7 @@ resize_thinktank2023();
 
 //images to resize
 function resize_thinktank2023() {
+    console.log("Resizing thinktank2023 images");
     resizeImage("./public/img/events/thinktank2023/thinktank_left_banner.jpg", "./public/img/events/thinktank2023/resized/thinktank_left_banner-256.webp", 256, 493);
     resizeImage("./public/img/events/thinktank2023/thinktank_left_banner.jpg", "./public/img/events/thinktank2023/resized/thinktank_left_banner-540.webp", 540, 1041);
     resizeImage("./public/img/events/thinktank2023/thinktank_left_banner.jpg", "./public/img/events/thinktank2023/resized/thinktank_left_banner-720.webp", 720, 1388);
@@ -24,6 +25,7 @@ function resize_thinktank2023() {
     resizeImage("./public/img/events/thinktank2023/thinktank_right_banner.jpg", "./public/img/events/thinktank2023/resized/thinktank_right_banner-1330.webp", 1330, 2728);
     resizeImage("./public/img/events/thinktank2023/thinktank_right_banner.jpg", "./public/img/events/thinktank2023/resized/thinktank_right_banner-1440.webp", 1440, 2954);
 }
+
 console.log("Resizing Images Complete")
 
 // resize driver code
@@ -41,5 +43,3 @@ function resizeImage(inputFilePath, outputFilePath, scaledX, scaledY, replace = 
         console.log("No Change: " + inputFilePath + " not resized since " + outputFilePath + " already exists")
     }
 }
-
-
