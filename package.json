@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "processImages": "node resize_images.js"
   },
-  "author": "Evan Qi",
+  "author": "Evan Qi and Aiden Ma",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
