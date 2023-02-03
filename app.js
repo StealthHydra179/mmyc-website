@@ -45,22 +45,7 @@ app.get('/ambassador', (req, res) => {
     res.locals.title = 'Ambassador Program';
     res.render('ambassador');
 })
-// TODO WHENEVER EDITING PAGES NEED TO ADD A NEW ROUTE FOR THE PAGE
-// app.get('/events/thinktank', (req, res) => {
-//     res.locals.title = 'ThinkTank';
-//     res.render('events/thinktank');
-// })
-//
-// app.get('/events/collage', (req, res) => {
-//     res.locals.title = 'Collage';
-//     res.render('events/collage');
-// })
-//
-// app.get('/events/frostbites', (req, res) => {
-//     res.locals.title = 'Frostbites';
-//     res.render('events/frostbites');
-// })
-// END TODO
+
 app.get('/events/thinktank2023', (req, res) => {
     res.locals.title = 'ThinkTank 2023';
     res.render('events/thinktank2023');
@@ -91,6 +76,7 @@ app.get('/faq', (req, res) => {
 })
 
 app.get('/events/evolve2023/signup', (req, res) => {
+    // res.render('redirect')
     res.status(302).redirect("https://docs.google.com/forms/d/e/1FAIpQLSddX4fI8ZOmBJgN9U7kTNLmnebHOlO287ptJLYDL7UPQcBuMg/viewform")
 })
 
@@ -105,7 +91,7 @@ app.get('/events/evolve2023', (req, res) => {
 })
 
 
-// why does backslash at the end break everything ;-;
+// why does backslash at the end break everything ;-; (rel links)
 
 var port = process.env.PORT || 3000;
 
