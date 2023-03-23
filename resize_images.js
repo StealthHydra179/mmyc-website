@@ -38,7 +38,6 @@ function resizeImage(inputFilePath, outputFilePath, scaledX, scaledY, replace = 
                 console.log("New File: " + inputFilePath + " resized to " + outputFilePath + " with dimensions (x,y): (" + scaledX + ", " + scaledY + ")");
             }
         });
-        
     } else {
         console.log("No Change: " + inputFilePath + " not resized since " + outputFilePath + " already exists")
     }
