@@ -97,6 +97,11 @@ app.get('/events/evolve2023', (req, res) => {
     res.render('events/evolve2023');
 })
 
+app.get("/events/expo2023", (req, res) => {
+res.locals.title = "Expo 2023";
+    res.render("events/expo");
+})
+
 app.use(express.json())
 app.post('/mailing-list-signup', (req, res) => {
     // store to obj
