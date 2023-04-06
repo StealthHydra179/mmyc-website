@@ -121,7 +121,7 @@ typings/
 # temp img files
 views/img
 views/partials/img
-
+#.img/
 tmp
 
 strerr.log

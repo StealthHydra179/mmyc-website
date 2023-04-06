@@ -57,12 +57,24 @@
         e.preventDefault();
         $('#mailing-list').hide();
         $('#thank-you').show();
-        fetch(scriptURL1, {
+        // fetch(scriptURL1, {
+        //     method: 'POST',
+        //     body: new FormData(form1)
+        // })
+        //     .then(response => console.log('Success!', response))
+        //     .catch(error => console.error('Error!', error.message))
+        // call back to exp serv then save then exp
+
+        fetch("/mailing-list-signup", {
             method: 'POST',
-            body: new FormData(form1)
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ "email": filledOut.textContent })
         })
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
+
+
         filledOut.reset();
     })
 </script>

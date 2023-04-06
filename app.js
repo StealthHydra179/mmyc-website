@@ -2,7 +2,15 @@ const { render } = require('ejs');
 const express = require('express');
 const app = express();
 const path = require('path');
+const fs = require('fs');
 //const myTeam = require('./team.json')
+
+// let emailData = {
+//     emails:[]
+// };
+// let rawEmailData = fs.readFileSync('emails.json');
+// emailData = JSON.parse(rawEmailData.toString());
+
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -45,22 +53,7 @@ app.get('/ambassador', (req, res) => {
     res.locals.title = 'Ambassador Program';
     res.render('ambassador');
 })
-// TODO WHENEVER EDITING PAGES NEED TO ADD A NEW ROUTE FOR THE PAGE
-// app.get('/events/thinktank', (req, res) => {
-//     res.locals.title = 'ThinkTank';
-//     res.render('events/thinktank');
-// })
-//
-// app.get('/events/collage', (req, res) => {
-//     res.locals.title = 'Collage';
-//     res.render('events/collage');
-// })
-//
-// app.get('/events/frostbites', (req, res) => {
-//     res.locals.title = 'Frostbites';
-//     res.render('events/frostbites');
-// })
-// END TODO
+
 app.get('/events/thinktank2023', (req, res) => {
     res.locals.title = 'ThinkTank 2023';
     res.render('events/thinktank2023');
@@ -91,21 +84,54 @@ app.get('/faq', (req, res) => {
 })
 
 app.get('/events/evolve2023/signup', (req, res) => {
+    // res.render('redirect')
     res.status(302).redirect("https://docs.google.com/forms/d/e/1FAIpQLSddX4fI8ZOmBJgN9U7kTNLmnebHOlO287ptJLYDL7UPQcBuMg/viewform")
 })
 
-// app.get('/events/evolve2023/', (req, res) => {
-//     res.locals.title = 'Evolve 2023';
-//     res.status(301).redirect("/events/evolve2023")
-// })
+app.get('/email', (req,res) => {
+    res.status(302).redirect("https://sybb0997.mywhc.ca:2096/")
+})
 
 app.get('/events/evolve2023', (req, res) => {
     res.locals.title = 'Evolve 2023';
     res.render('events/evolve2023');
 })
 
+app.get("/events/expo2023", (req, res) => {
+res.locals.title = "Expo 2023";
+    res.render("events/expo");
+})
 
-// why does backslash at the end break everything ;-;
+app.use(express.json())
+app.post('/mailing-list-signup', (req, res) => {
+    // store to obj
+    // console.log(req);
+    console.log(req.query.email);
+    var emailProvided = req.query.email;
+    if (emailProvided == null) {
+        console.log("no email");
+        res.send("No email!");
+        return;
+    }
+    fs.readFile('./email.json', 'utf8', function readFileCallback(err, data){
+        if (err){
+            console.log(err);
+            res.send("Error!");
+        } else {
+            obj = JSON.parse(data); //now it an object
+            obj.table.push({email: emailProvided}); //add some data
+            json = JSON.stringify(obj); //convert it back to json
+            fs.writeFile('./email.json', json, 'utf8', function callback() {
+                res.send("Complete!");
+                
+                //now upload to google sheets?
+                
+                
+            }); // write it back
+    }});
+})
+
+// why does backslash at the end break everything ;-; (rel links)
 
 var port = process.env.PORT || 3000;
 
@@ -113,6 +139,7 @@ app.listen(port, () => {
     console.log("Listening");
 })
 
-var fs = require("fs");
+// var fs = require("fs");
+const {raw} = require("express");
 var contents = fs.readFileSync("headshots.json");
 var jsonContent = JSON.parse(contents);
