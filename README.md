@@ -7,8 +7,10 @@ npm install
 node app
 ```
 Website opens on port 3000 once run. [http://localhost:3000](http://localhost:3000)
-
-
+```
+fetch from github
+cpanel nodejs app
+```
 ## Things to change
 - ~~DONE Update packages~~
 - Update headshots.json (required: names, descriptions, headshot) https://docs.google.com/spreadsheets/d/1mfZpdVwrwfBDhVwkWo2rdhDh8Ru42HhMU_BFlaM2m0U/edit#gid=0
