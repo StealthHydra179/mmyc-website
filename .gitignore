@@ -122,3 +122,6 @@ typings/
 views/img
 views/partials/img
 #.img/
+tmp
+
+strerr.log
