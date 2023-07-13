@@ -28,6 +28,11 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
+app.get('/signup', (req, res) => {
+    res.locals.title = 'Signup for MMYC';
+    res.render('signup');
+})
+
 app.get('/home', (req, res) => {
     res.locals.title = 'MMYC Home Page';
     res.render('home');
