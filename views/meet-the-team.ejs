@@ -27,7 +27,14 @@
                                         </div>
                                         <div class="order-lg-1 order-0 col-lg-4 col-10 mb-5 mb-lg-0 profile-circle">
 <!--                                            <img src="/img/icons/mmyc_logo.png">-->
-                                            <img src="<%= jsonContent[i].picture %>">
+<!--                                            <img src="<%= jsonContent[i].picture %>.png">-->
+
+                                            <!--578×385, 908×605-->
+                                            <img srcset="<%= jsonContent[i].picture %>-578.webp 578w,
+                                                         <%= jsonContent[i].picture %>-908.webp 908w"
+                                                 sizes="calc(100vw - 86px)"
+                                                 src="<%= jsonContent[i].picture %>.webp"
+                                                 alt="profile picture">
                                         </div>
                                     </div>
                                 </div>
@@ -44,8 +51,13 @@
                                 <div class="col-xl-3"></div>
                                 <div class="col-xl-3 col-lg-4 col-md-6 grid-column">
                                     <button type="button" class="btn" data-toggle="modal" data-target="#modal0">
-                                        <img src="<%= jsonContent[0].picture %>">
+<!--                                        <img src="<%= jsonContent[0].picture %>.png">-->
 <!--                                        <img src="/img/icons/mmyc_logo.png">-->
+                                        <img srcset="<%= jsonContent[0].picture %>-578.webp 578w,
+                                                         <%= jsonContent[0].picture %>-908.webp 908w"
+                                             sizes="calc(100vw - 86px)"
+                                             src="<%= jsonContent[0].picture %>.webp"
+                                             alt="profile picture">
 
                                     </button>
                                     <h2>
@@ -55,8 +67,13 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-6 grid-column">
                                     <button type="button" class="btn" data-toggle="modal" data-target="#modal1">
-                                        <img src="<%= jsonContent[1].picture %>">
+<!--                                        <img src="<%= jsonContent[1].picture %>.png">-->
 <!--                                        <img src="/img/icons/mmyc_logo.png">-->
+                                        <img srcset="<%= jsonContent[1].picture %>-578.webp 578w,
+                                                         <%= jsonContent[1].picture %>-908.webp 908w"
+                                             sizes="calc(100vw - 86px)"
+                                             src="<%= jsonContent[1].picture %>.webp"
+                                             alt="profile picture">
                                     </button>
                                     <h2>
                                         <%= jsonContent[1].firstName %> <br />
@@ -70,8 +87,13 @@
                                 <div class="col-xl-3 col-lg-4 col-md-6 grid-column">
                                         <button type="button" class="btn" data-toggle="modal"
                                             data-target="#modal<%=i%>">
-                                            <img src="<%= jsonContent[i].picture %>">
+<!--                                            <img src="<%= jsonContent[i].picture %>.png">-->
 <!--                                            <img src="/img/icons/mmyc_logo.png">-->
+                                            <img srcset="<%= jsonContent[i].picture %>-578.webp 578w,
+                                                         <%= jsonContent[i].picture %>-908.webp 908w"
+                                                 sizes="calc(100vw - 86px)"
+                                                 src="<%= jsonContent[i].picture %>.webp"
+                                                 alt="profile picture">
                                         </button>
                                         <h2>
                                             <%= jsonContent[i].firstName %> <br />
