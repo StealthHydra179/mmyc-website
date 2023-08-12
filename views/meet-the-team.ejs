@@ -10,7 +10,7 @@
     <body id="page-container">
         <div id="content-wrap">
             <%- include('partials/navbar') %>
-                <% for(var i=0; i < 25; i++) { %>
+                <% for(var i=0; i < jsonContent.length; i++) { %>
                     <div class="modal fade" id="modal<%=i%>" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -26,8 +26,8 @@
                                             <%= jsonContent[i].bio %>
                                         </div>
                                         <div class="order-lg-1 order-0 col-lg-4 col-10 mb-5 mb-lg-0 profile-circle">
-                                            <img src="/img/icons/mmyc_logo.png">
-<!--                                            <img src="<%= jsonContent[i].picture %>">-->
+<!--                                            <img src="/img/icons/mmyc_logo.png">-->
+                                            <img src="<%= jsonContent[i].picture %>">
                                         </div>
                                     </div>
                                 </div>
@@ -44,8 +44,8 @@
                                 <div class="col-xl-3"></div>
                                 <div class="col-xl-3 col-lg-4 col-md-6 grid-column">
                                     <button type="button" class="btn" data-toggle="modal" data-target="#modal0">
-<!--                                        <img src="<%= jsonContent[0].picture %>">-->
-                                        <img src="/img/icons/mmyc_logo.png">
+                                        <img src="<%= jsonContent[0].picture %>">
+<!--                                        <img src="/img/icons/mmyc_logo.png">-->
 
                                     </button>
                                     <h2>
@@ -55,8 +55,8 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-6 grid-column">
                                     <button type="button" class="btn" data-toggle="modal" data-target="#modal1">
-<!--                                        <img src="<%= jsonContent[1].picture %>">-->
-                                        <img src="/img/icons/mmyc_logo.png">
+                                        <img src="<%= jsonContent[1].picture %>">
+<!--                                        <img src="/img/icons/mmyc_logo.png">-->
                                     </button>
                                     <h2>
                                         <%= jsonContent[1].firstName %> <br />
@@ -70,8 +70,8 @@
                                 <div class="col-xl-3 col-lg-4 col-md-6 grid-column">
                                         <button type="button" class="btn" data-toggle="modal"
                                             data-target="#modal<%=i%>">
-<!--                                            <img src="<%= jsonContent[i].picture %>">-->
-                                            <img src="/img/icons/mmyc_logo.png">
+                                            <img src="<%= jsonContent[i].picture %>">
+<!--                                            <img src="/img/icons/mmyc_logo.png">-->
                                         </button>
                                         <h2>
                                             <%= jsonContent[i].firstName %> <br />
