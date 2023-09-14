@@ -46,6 +46,7 @@ app.get('/about-us', (req, res) => {
 app.get('/meet-the-team', (req, res) => {
     res.locals.jsonContent = jsonContent.data;
     res.locals.title = 'Meet The Team';
+    res.locals.fs = fs;
     res.render('meet-the-team');
 })
 

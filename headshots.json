@@ -1,147 +1,154 @@
 {
-    "data": [{
-            "firstName": "Stephanie",
-            "lastName": "Sheng",
-            "picture": "/img/headshots/resized/Stephanie",
-            "bio": "Stephanie is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Gloria",
-            "lastName": "Huang",
-            "picture": "/img/headshots/resized/Gloria",
-            "bio": "Gloria is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Sabine",
-            "lastName": "Cuesta",
-            "picture": "/img/headshots/resized/Sabine",
-            "bio": "Sabine is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Silken",
-            "lastName": "Cheung-Ege",
-            "picture": "/img/headshots/resized/Silken",
-            "bio": "Silken is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Christian",
-            "lastName": "Matros",
-            "picture": "/img/headshots/resized/Christian",
-            "bio": "Christian is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Varna",
-            "lastName": "Venkatesh",
-            "picture": "/img/headshots/resized/Varna",
-            "bio": "Varna is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Benjamin",
-            "lastName": "Kim",
-            "picture": "/img/headshots/resized/Benjamin",
-            "bio": "Benjamin is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Jin",
-            "lastName": "Zhou",
-            "picture": "/img/headshots/resized/Jin",
-            "bio": "Jin is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Melody",
-            "lastName": "Cao",
-            "picture": "/img/headshots/resized/Melody",
-            "bio": "Melody is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Mehrava",
-            "lastName": "Afshani",
-            "picture": "/img/headshots/resized/Mehrava",
-            "bio": "Mehrava is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Hadia",
-            "lastName": "Rasool",
-            "picture": "/img/headshots/resized/Hadia",
-            "bio": "Hadia is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Arya",
-            "lastName": "Waza",
-            "picture": "/img/headshots/resized/Arya",
-            "bio": "Arya is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Aiden",
-            "lastName": "Ma",
-            "picture": "/img/headshots/resized/Aiden",
-            "bio": "Aiden is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Elyssa",
-            "lastName": "Qi",
-            "picture": "/img/headshots/resized/Elyssa",
-            "bio": "Elyssa is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Anjani",
-            "lastName": "Sharma",
-            "picture": "/img/headshots/resized/Anjani",
-            "bio": "Anjani is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Tom",
-            "lastName": "Zheng",
-            "picture": "/img/headshots/resized/Tom",
-            "bio": "Tom is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Jiabei",
-            "lastName": "He",
-            "picture": "/img/headshots/resized/Jiabei",
-            "bio": "Jiabei is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Callista",
-            "lastName": "Chan",
-            "picture": "/img/headshots/resized/Callista",
-            "bio": "Callista is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Karina",
-            "lastName": "Florea",
-            "picture": "/img/headshots/resized/Karina",
-            "bio": "Karina is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Eric",
-            "lastName": "Gao",
-            "picture": "/img/headshots/resized/Eric",
-            "bio": "Eric is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Allen",
-            "lastName": "Wang",
-            "picture": "/img/headshots/resized/Allen",
-            "bio": "Allen is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Enya",
-            "lastName": "Law",
-            "picture": "/img/headshots/resized/Enya",
-            "bio": "Enya is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Isabelle",
-            "lastName": "Cai",
-            "picture": "/img/headshots/resized/Isabelle",
-            "bio": "Isabelle is a MMYC 2022-2023 member!"
-        },
-        {
-            "firstName": "Rachel",
-            "lastName": "Zhang",
-            "picture": "/img/headshots/resized/Rachel",
-            "bio": "Rachel is a MMYC 2022-2023 member!"
-        }
-    ]
+  "data": [
+    {
+      "firstName": "Jin",
+      "lastName": "Zhou",
+      "picture": "/img/headshots/resized/Jin",
+      "bio": "Jin Zhou is a grade 10 student at Thornhill Secondary School. Jin is a ward 1 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Callista",
+      "lastName": "Chan",
+      "picture": "/img/headshots/resized/Callista",
+      "bio": "Callista Chan is a grade 12 student at St. Augustine Catholic High School. Callista is a ward 6 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Kelly",
+      "lastName": "Liu",
+      "picture": "/img/headshots/resized/Kelly",
+      "bio": "Kelly Liu is a grade 9 student at University of Toronto Schools. Kelly is a ward 2 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Sabine",
+      "lastName": "Cuesta",
+      "picture": "/img/headshots/resized/Sabine",
+      "bio": "Sabine Cuesta is a grade 10 student at St. Robert CHS. Sabine is a ward 1 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Christian",
+      "lastName": "Matros",
+      "picture": "/img/headshots/resized/Christian",
+      "bio": "Christian Matros is a grade 10 student at St. Robert CHS. Christian is a ward 1 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Varna",
+      "lastName": "Venkatesh",
+      "picture": "/img/headshots/resized/Varna",
+      "bio": "Varna Venkatesh is a grade 10 student at Markville Secondary School. Varna is a ward 6 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Li",
+      "picture": "/img/headshots/resized/Michael",
+      "bio": "Michael Li is a grade 10 student at Markville Secondary School. Michael is a ward 6 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Oscar",
+      "lastName": "Cheng",
+      "picture": "/img/headshots/resized/Oscar",
+      "bio": "Oscar Cheng is a grade 10 student at St. Robert Catholic High School. Oscar is a ward 8 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Elisabeth",
+      "lastName": "Lum",
+      "picture": "/img/headshots/resized/Elisabeth",
+      "bio": "Elisabeth Lum is a grade 10 student at Markville Secondary School. Elisabeth is a ward 1 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Lilia",
+      "lastName": "Zitouni",
+      "picture": "/img/headshots/resized/Lilia",
+      "bio": "Lilia Zitouni is a grade 10 student at St. Robert Catholic High School. Lilia is a ward 1 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Kara",
+      "lastName": "Cespedes",
+      "picture": "/img/headshots/resized/Kara",
+      "bio": "Kara Cespedes is a grade 10 student at Markville Secondary School. Kara is a ward 3 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Ivy",
+      "lastName": "Chen",
+      "picture": "/img/headshots/resized/Ivy",
+      "bio": "Ivy Chen is a grade 10 student at Markville Secondary School. Ivy is a ward 6 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Zoey",
+      "lastName": "Rodrigues",
+      "picture": "/img/headshots/resized/Zoey",
+      "bio": "Zoey Rodrigues is a grade 10 student at Bill Hogarth Secondary School. Zoey is a ward 6 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Melody",
+      "lastName": "Cao",
+      "picture": "/img/headshots/resized/Melody",
+      "bio": "Melody Cao is a grade 11 student at Bayview Secondary School. Melody is a ward 2 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Mehrava",
+      "lastName": "Afshani",
+      "picture": "/img/headshots/resized/Mehrava",
+      "bio": "Mehrava Afshani is a grade 11 student at Bayview Secondary School. Mehrava is a ward 2 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Hadia",
+      "lastName": "Rasool",
+      "picture": "/img/headshots/resized/Hadia",
+      "bio": "Hadia Rasool is a grade 11 student at Markham District High School. Hadia is a ward 7 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Gao",
+      "picture": "/img/headshots/resized/Sarah",
+      "bio": "Sarah Gao is a grade 11 student at Bayview Secondary School. Sarah is a ward 2 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Rithikha",
+      "lastName": "Kalaiunarbavan",
+      "picture": "/img/headshots/resized/Rithikha",
+      "bio": "Rithikha Kalaiunarbavan is a grade 11 student at Middlefield Collegiate Institute. Rithikha is a ward 7 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Elyssa",
+      "lastName": "Qi",
+      "picture": "/img/headshots/resized/Elyssa",
+      "bio": "Elyssa Qi is a grade 12 student at St. Augustine Catholic High School. Elyssa is a ward 2 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Zheng",
+      "picture": "/img/headshots/resized/Tom",
+      "bio": "Tom Zheng is a grade 12 student at Crescent School. Tom is a ward 3 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Jiabei",
+      "lastName": "He",
+      "picture": "/img/headshots/resized/Jiabei",
+      "bio": "Jiabei He is a grade 12 student at Bill Hogarth Secondary School. Jiabei is a ward 5 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Aiden",
+      "lastName": "Ma",
+      "picture": "/img/headshots/resized/Aiden",
+      "bio": "Aiden Ma is a grade 12 student at St. Robert CHS. Aiden is a ward 1 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Isabella",
+      "lastName": "Peng",
+      "picture": "/img/headshots/resized/Isabella",
+      "bio": "Isabella Peng is a grade 12 student at Unionville High School. Isabella is a ward 4 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Chan",
+      "picture": "/img/headshots/resized/Sam",
+      "bio": "Sam Chan is a grade 12 student at St. Augustine Catholic High School. Sam is a ward 2 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    },
+    {
+      "firstName": "Ananiya",
+      "lastName": "Narmathan",
+      "picture": "/img/headshots/resized/Ananiya",
+      "bio": "Ananiya Narmathan is a grade 12 student at St. Augustine Catholic High School. Ananiya is a ward 2 representative for Markham Mayor's Youth Council for the 2022-2023 term."
+    }
+  ]
 }
